@@ -17,9 +17,7 @@ CascadeClassifier cascade,nestedCascade;
 int facecounter=0;
 
 /*int g_switch_value = 0;
-// This will be the callback that we give to the
-// trackbar.
-//
+// This will be the callback that we give to thE trackbar.
 
 
 void switch_callback( int position ) 
@@ -42,8 +40,6 @@ void switch_callback( int position )
 void detectAndDraw( Mat& img,
                    CascadeClassifier& cascade, CascadeClassifier& nestedCascade,
                    double scale);
-
-
 
 int main( int argc, const char** argv )
 {
@@ -140,7 +136,10 @@ void detectAndDraw( Mat& img,
 	    circle( img, center, radius, color, 2, 8, 0 );
         }
     }
-
-
+	
+	
     cv::imshow( "result", img );
 }
+
+
+
