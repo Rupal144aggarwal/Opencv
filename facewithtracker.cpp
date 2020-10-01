@@ -15,9 +15,7 @@ String cascadeName2 = "/home/project/Desktop/haarcascades/aGest.xml";
 CascadeClassifier cascade,nestedCascade;
 
 int g_switch_value = 0;
-// This will be the callback that we give to the
-// trackbar.
-//
+// This will be the callback that we give to the  trackbar .
 
 void detectAndDraw( Mat& img,
                    CascadeClassifier& cascade, CascadeClassifier& nestedCascade,
@@ -34,14 +32,9 @@ void switch_callback( int position )
 	{
 		cascade.load(cascadeName2);	
 		nestedCascade.load(cascadeName2);
-		
-
 	}
 
 }
-
-
-
 
 int main( int argc, const char** argv )
 {
@@ -79,9 +72,6 @@ _cleanup_:
         cvReleaseCapture( &capture );
     }
         
-       
-    
-
     cvDestroyWindow("result");
 
     return 0;
@@ -149,3 +139,5 @@ void detectAndDraw( Mat& img,
     }
     cv::imshow( "result", img );
 }
+
+
