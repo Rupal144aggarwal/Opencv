@@ -29,9 +29,6 @@ cvSetCaptureProperty(
 	pos);
 }
 
-
-
-
 void detectAndDraw( Mat& img,
                    CascadeClassifier& cascade, CascadeClassifier& nestedCascade,
                    double scale);
@@ -47,14 +44,9 @@ void switch_callback( int position )
 	{
 		cascade.load(cascadeName2);	
 		nestedCascade.load(cascadeName2);
-		
-
 	}
 
 }
-
-
-
 
 int main( int argc, const char** argv )
 {
@@ -75,12 +67,8 @@ frames,
 onTrackbarSlide
 );
 }
-
-
 	Mat frameCopy, image;
     	Mat frame;
-
-
 
 if(!capture) cout << "Capture from file did not work " <<  " 0 " << " didn't work" << endl;
   
@@ -117,9 +105,6 @@ _cleanup_:
         cvReleaseCapture( &capture );
     }
         
-       
-    
-
     cvDestroyWindow("result");
 
     return 0;
@@ -189,3 +174,5 @@ void detectAndDraw( Mat& img,
     }
     cv::imshow( "result", img );
 }
+
+
